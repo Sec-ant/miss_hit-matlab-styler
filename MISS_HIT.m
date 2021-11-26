@@ -48,7 +48,7 @@ classdef MISS_HIT
                                     file_name, default_args{1});
             system(format_result);
 
-            % write formatted content to active editor
+            % replace newline characters
             formatted_content = replace(fileread(file_name), ...
                                         [char(13), newline], ...
                                         newline);
