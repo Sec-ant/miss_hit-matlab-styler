@@ -20,9 +20,9 @@ Execute `MISS_HIT.mh_style()` or `MISS_HIT.mh_style` in MATLAB command window an
 
 ```matlab
 % in matlab command window
-MISS_HIT.mh_style();
+MISS_HIT.mh_style()
 % or
-MISS_HIT.mh_style;
+MISS_HIT.mh_style
 ```
 
 [`.miss_hit.cfg`](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=miss_hit.cfg) or [`.miss_hit`](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=.miss_hit) is regarded as a valid configuration in your project as described in [Setting up configuration in your project](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=Setting%20up%20configuration%20in%20your%20project).
@@ -33,16 +33,16 @@ You can pass CLI arguments as a character array to the function:
 
 ```matlab
 % in matlab command window
-MISS_HIT.mh_style('--tab_width 2 --ignore-config --fix');
+MISS_HIT.mh_style('--tab_width 2 --ignore-config --fix')
 ```
 
-When nothing is passed to the function (in default case), `--fix` is automatically added. To explicitly discard all options, run `MISS_HIT.mh_style('');`.
+When nothing is passed to the function (in default case), `--fix` is automatically added. To explicitly discard all options, run `MISS_HIT.mh_style('')`.
 
 A detailed list of valid options can be acquired in MATLAB command window:
 
 ```matlab
 % in matlab command window
-MISS_HIT.mh_style('-h');
+MISS_HIT.mh_style('-h')
 ```
 
  or in shell:
@@ -54,7 +54,7 @@ mh_style -h
 
 ### Add as Shortcuts
 
-You can add `MISS_HIT.mh_style();` to your [favorite commands](https://www.mathworks.com/help/matlab/matlab_env/create-matlab-favorites-to-rerun-commands.html) and pin it on the [quick access tool bar](https://www.mathworks.com/help/matlab/matlab_env/access-frequently-used-features.html). For convenience, I wrote a simple function to do this for you:
+You can add `MISS_HIT.mh_style` to your [favorite commands](https://www.mathworks.com/help/matlab/matlab_env/create-matlab-favorites-to-rerun-commands.html) and pin it on the [quick access tool bar](https://www.mathworks.com/help/matlab/matlab_env/access-frequently-used-features.html). For convenience, I wrote a simple function to do this for you:
 
 ```matlab
 % in matlab command window
