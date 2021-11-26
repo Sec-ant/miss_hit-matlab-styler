@@ -1,4 +1,4 @@
-% MISS_HIT A Matlab Class API for MISS_HIT
+% MH_STYLE A Matlab styler wrapper using MISS_HIT mh_style
 %
 %   (c) Copyright 2021 Ze-Zheng Wu
 
