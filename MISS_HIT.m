@@ -1,5 +1,5 @@
 classdef MISS_HIT
-    % MISS_HIT A Matlab Class API for MISS_HIT
+    % MISS_HIT A MATLAB Class API for MISS_HIT
     %
     %   (c) Copyright 2021 Ze-Zheng Wu
     methods (Static, Access = public)
@@ -61,7 +61,52 @@ classdef MISS_HIT
 
         end
 
+        function add_to_quick_access(function_handle)
+
+            % get function name
+            full_function_name = char(function_handle);
+            split_function_name = split(full_function_name, '.');
+            function_name = split_function_name{end};
+            fc = com.mathworks.mlwidgets. ...
+                favoritecommands.FavoriteCommands.getInstance();
+
+            % new command instance
+            newFavoriteCommand = com.mathworks.mlwidgets. ...
+                favoritecommands.FavoriteCommandProperties();
+
+            % set command label
+            newFavoriteCommand.setLabel(function_name);
+
+            % set command icon name
+            newFavoriteCommand.setIconName('icon.gif');
+
+            % set command icon path
+            icon_path = fileparts(mfilename('fullpath'));
+            newFavoriteCommand.setIconPath(icon_path);
+
+            % set command category
+            newFavoriteCommand.setCategoryLabel("MISS_HIT");
+
+            % set command code
+            newFavoriteCommand.setCode([full_function_name, '();']);
+
+            % set command toolbar visibility
+            newFavoriteCommand.setIsOnQuickToolBar(true);
+
+            % set command label visibility
+            newFavoriteCommand.setIsShowingLabelOnToolBar(true);
+
+            % test if command already exists
+            if fc.hasCommand(function_name, 'MISS_HIT')
+                fc.removeCommand(function_name, 'MISS_HIT');
+            end
+
+            % add command to favorite
+            fc.addCommand(newFavoriteCommand);
+        end
+
     end
+
     methods (Static, Access = protected)
 
         function clean_up_file(file_name)
