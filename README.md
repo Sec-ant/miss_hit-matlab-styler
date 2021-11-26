@@ -2,7 +2,7 @@
 
 A MATLAB Class Wrapper for MISS_HIT (Currently only `mh_style` is supported)
 
-
+![demo](https://user-images.githubusercontent.com/10386119/143576280-c93c3cdd-1ed1-42e3-ae36-b5b427a332c2.gif)
 
 ## Install
 
