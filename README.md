@@ -58,7 +58,7 @@ You can add `MISS_HIT.mh_style` to your [favorite commands](https://www.mathwork
 
 ```matlab
 % in matlab command window
-MISS_HIT.add_to_quick_access(@MISS_HIT.mh_style);
+MISS_HIT.add_to_quick_access(@MISS_HIT.mh_style)
 ```
 
 And then you can format your code by simply clicking the icon on the upright corner in the tool bar or use the keyboard shortcut `alt + 1`.
