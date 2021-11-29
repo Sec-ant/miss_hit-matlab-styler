@@ -12,7 +12,7 @@ A MATLAB Class Wrapper for MISS_HIT (Currently only `mh_style` is supported)
 
 ## Usage
 
-The usage of this wrapper is rather simple. Please refer to [MISS_HIT](https://github.com/florianschanda/miss_hit) for a detailed documentation regarding the styler.
+The usage of this wrapper is rather simple. Please refer to [MISS_HIT Style Checker](https://florianschanda.github.io/miss_hit/style_checker.html) for a detailed documentation regarding the styler.
 
 ### Default
 
@@ -25,7 +25,7 @@ MISS_HIT.mh_style()
 MISS_HIT.mh_style
 ```
 
-[`.miss_hit.cfg`](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=miss_hit.cfg) or [`.miss_hit`](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=.miss_hit) is regarded as a valid configuration in your project as described in [Setting up configuration in your project](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=Setting%20up%20configuration%20in%20your%20project).
+[`miss_hit.cfg`](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=miss_hit.cfg) or [`.miss_hit`](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=.miss_hit) is regarded as a valid configuration in your project as described in [Setting up configuration in your project](https://florianschanda.github.io/miss_hit/style_checker.html#:~:text=Setting%20up%20configuration%20in%20your%20project).
 
 ### Run with Options
 
