@@ -11,6 +11,8 @@ classdef MISS_HIT
             if ismac
                 suppress_output = '1> /dev/null 2> /dev/null';
                 set_environment = 'export PYTHONIOENCODING=UTF-8 && ';
+                % add path(substitute your own user name for rookie)
+                setenv('PATH', getenv('PATH')+":/Users/rookie/.local/bin/")
             elseif isunix
                 suppress_output = '1> /dev/null 2> /dev/null';
                 set_environment = 'export PYTHONIOENCODING=UTF-8 && ';
