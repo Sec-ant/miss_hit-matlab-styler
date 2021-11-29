@@ -11,8 +11,8 @@ classdef MISS_HIT
             if ismac
                 suppress_output = '1> /dev/null 2> /dev/null';
                 set_environment = 'export PYTHONIOENCODING=UTF-8 && ';
-                [~,username]=system('id -un');
-                setenv('PATH', getenv('PATH')+":/Users/"+username(1:end-1)+"/.local/bin/")
+                [~, username] = system('id -un');
+                setenv('PATH', getenv('PATH') + ":/Users/" + username(1:end - 1) + "/.local/bin/");
             elseif isunix
                 suppress_output = '1> /dev/null 2> /dev/null';
                 set_environment = 'export PYTHONIOENCODING=UTF-8 && ';
@@ -26,7 +26,6 @@ classdef MISS_HIT
 
             % default options
             default_args = {['--fix ', suppress_output]};
-%             default_args = {['--fix ']};
             default_args(1:nargin) = varargin;
 
             % get active editor content
