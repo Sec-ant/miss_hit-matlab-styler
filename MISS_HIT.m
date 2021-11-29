@@ -12,7 +12,7 @@ classdef MISS_HIT
                 suppress_output = '1> /dev/null 2> /dev/null';
                 set_environment = 'export PYTHONIOENCODING=UTF-8 && ';
                 [~,username]=system('id -un');
-                setenv('PATH', getenv('PATH')+":/Users/"+username+"/.local/bin/")
+                setenv('PATH', getenv('PATH')+":/Users/"+username(1:end-1)+"/.local/bin/")
             elseif isunix
                 suppress_output = '1> /dev/null 2> /dev/null';
                 set_environment = 'export PYTHONIOENCODING=UTF-8 && ';
